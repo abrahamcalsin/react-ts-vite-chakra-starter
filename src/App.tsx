@@ -25,7 +25,12 @@ function App() {
       <Text my="6">
         Edit <Code>src/App.tsx</Code> and save to test HMR
       </Text>
-      <Text bg="gray.100" fontStyle="italic" py="5">
+      <Text
+        bg="gray.100"
+        _dark={{ bg: "whiteAlpha.200" }}
+        fontStyle="italic"
+        py="5"
+      >
         {"{"}Created by{" "}
         <Link
           href="https://www.abrahamcalsin.com"
