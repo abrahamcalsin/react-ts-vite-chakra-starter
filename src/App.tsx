@@ -1,38 +1,43 @@
 import * as React from "react";
 
+import { Code, Container, Heading, Link, Text } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div>
-      <h1>
-        <a href="https://reactjs.org/" target="_blank">
+    <Container textAlign="center" mt="20">
+      <Heading>
+        <Link href="https://reactjs.org/" isExternal>
           React
-        </a>{" "}
+        </Link>{" "}
         +{" "}
-        <a href="https://www.typescriptlang.org/" target="_blank">
+        <Link href="https://www.typescriptlang.org/" isExternal>
           TS
-        </a>{" "}
+        </Link>{" "}
         +{" "}
-        <a href="https://vitejs.dev/" target="_blank">
+        <Link href="https://vitejs.dev/" isExternal>
           Vite
-        </a>{" "}
+        </Link>{" "}
         +{" "}
-        <a href="https://chakra-ui.com/" target="_blank">
+        <Link href="https://chakra-ui.com/" isExternal>
           Chakra
-        </a>
-      </h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <p>
-        <i>
-          {"{"}Created by{" "}
-          <a href="https://www.abrahamcalsin.com" target="_blank">
-            Abraham Calsin
-          </a>
+        </Link>
+      </Heading>
+      <Text my="6">
+        Edit <Code>src/App.tsx</Code> and save to test HMR
+      </Text>
+      <Text bg="gray.100" fontStyle="italic" py="5">
+        {"{"}Created by{" "}
+        <Link
+          href="https://www.abrahamcalsin.com"
+          fontWeight="bold"
+          textDecoration="underline"
+          isExternal
+        >
+          Abraham Calsin
           {"}"}
-        </i>
-      </p>
-    </div>
+        </Link>
+      </Text>
+    </Container>
   );
 }
 
